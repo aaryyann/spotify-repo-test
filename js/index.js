@@ -87,7 +87,7 @@ const playMusic = (music, pause = false) => {
 // Create album
 
 async function displayAlbum() {
-  let a = await fetch(`../songs/`);
+  let a = await fetch("../songs/");
   let response = await a.text();
 
   let div = document.createElement("div");
